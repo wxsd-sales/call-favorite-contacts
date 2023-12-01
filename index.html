@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+		<link rel="modulepreload" href="./_app/immutable/entry/start.f3fe9d22.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.e108d1fd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.ee92a045.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.8c0e5bb9.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.3ccd485a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.1e79ba89.js">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_1o5tw7w = {
+						assets: "/call-favorite-contacts",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {"PUBLIC_OAUTH_URL":"https://webexapis.com/v1/authorize","PUBLIC_CLIENT_ID":"Cc19cef4cfac66db38ea74f07f5b18914e5e5362e392319abb14390ddc5a24383","PUBLIC_REDIRECT_URL":"https://wxsd-sales.github.io/call-favorite-contacts/form"}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.f3fe9d22.js"),
+						import("./_app/immutable/entry/app.3ccd485a.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>
