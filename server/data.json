@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "email": "rkanthet@cisco.com",
+      "timeInSec": 35,
+      "contacts": [
+        {
+          "name": "Harish Chawla",
+          "sip": "rajithabhavani.kantheti+wxsd@gmail.com"
+        },
+        {
+          "name": "Fabien Habbouche",
+          "sip": "rkanthet@cisco.com"
+        },
+        {
+          "name": "Victor Vazquez",
+          "sip": "rkanthet@cisco.com"
+        }
+      ]
+    },
+    {
+      "email": "fabien@cisco.com",
+      "timeInSec": "20",
+      "contacts": [
+        {
+          "name": "Harish Chawla",
+          "sip": "rajithabhavani.kantheti+wxsd@gmail.com"
+        },
+        {
+          "name": "Rajitha Kantheti",
+          "sip": "rkanthet@cisco.com"
+        },
+        {
+          "name": "Victor Vazquez",
+          "sip": "rkanthet@cisco.com"
+        }
+      ]
+    },
+    {
+      "email": "wqadaman@cisco.com",
+      "timeInSec": 174,
+      "contacts": [
+        {
+          "name": "Fabien Habbouche",
+          "sip": "fahabbou@cisco.com"
+        },
+        {
+          "name": "Gawie Herholdt",
+          "sip": "gherhold@cisco.com"
+        },
+        {
+          "name": "Ziad Kassab",
+          "sip": "zikassab@cisco.com"
+        }
+      ]
+    },
+    {
+      "email": "zikassab@cisco.com",
+      "timeInSec": "50",
+      "contacts": [
+        {
+          "name": "Fabien Habbouche",
+          "sip": "fahabbou@cisco.com"
+        },
+        {
+          "name": "Gawie Herholdt",
+          "sip": "gherhold@cisco.com"
+        },
+        {
+          "name": "Waleed Qadamani",
+          "sip": "wqadaman@cisco.com"
+        }
+      ]
+    }
+  ]
+}

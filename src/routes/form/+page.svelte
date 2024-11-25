@@ -1,4 +1,5 @@
 <script>
+  import {PUBLIC_SERVER_URL} from '$env/static/public';
     import { onMount } from "svelte";
     import axios from "axios"
     import { base } from '$app/paths';
@@ -20,31 +21,7 @@
 		
         email=code.split('#')[0];
         console.log('email', email);
-    // await axios.get('https://webexapis.com/v1/people/me',{
-    //     headers: {
-    //     'Content-Type': 'application/json',
-    //     'Authorization': `Bearer ${code}`
-    // }
-    // })
-    // .then(async(r)=>{
-    //     email=r.data.emails[0]
-    //     await axios.get('https://e703-67-21-186-165.ngrok-free.app/data').then((r)=>{
-    //         contacts=r.data[0].contacts
-    //         given_seconds=r.data[0].timeInSec
-    //         let dateObj = new Date(given_seconds * 1000);
-    //         let hours = dateObj.getUTCHours();
-    //         let minutes = dateObj.getUTCMinutes();
-    //         let seconds = dateObj.getSeconds();
-
-    //         timeLeft = hours.toString().padStart(2, '0') + ':' + 
-    //                         minutes.toString().padStart(2, '0') + ':' + 
-    //                         seconds.toString().padStart(2, '0');
-    //         console.log(timeLeft)
-    //     }).catch((e)=>{
-    //     console.log("error",e)
-    //     })
-    // })
-    await axios.get(`https://adjd-server.glitch.me/data/${email}`).then((r)=>{
+    await axios.get(`${PUBLIC_SERVER_URL}/data/${email}`).then((r)=>{
         console.log(r)
             contacts=r.data.data.contacts
             given_seconds=r.data.data.timeInSec
@@ -77,7 +54,7 @@
     const thresdata={
       "time":time.toString()
     }
-    await axios.post(`https://adjd-server.glitch.me/data/${email}`,thresdata).then((r)=>{
+    await axios.post(`${PUBLIC_SERVER_URL}/data/${email}`,thresdata).then((r)=>{
       console.log(r)
       closeThresClick()
       location.reload()
