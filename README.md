@@ -40,22 +40,53 @@ Make sure you include the "Keep this here" portions (it is for legal, and securi
 
 ### Prerequisites & Dependencies: 
 
-- Is this dependant on having another repo
-- Insert pre-requisites in bullets
-- Insert pre-requisite here  Also state any assumptions that you may have made about the user.
-- Limit nested bullets
+- Need RoomOS device to place the call
 
 
 <!-- GETTING STARTED -->
 
 ### Installation Steps:
-1.  Include step one here
-    ```sh
-    insert line of code here if applicable
+1. Clone this repository and change directory:
+
+   ```
+   git clone https://github.com/wxsd-sales/call-favorite-contacts && cd call-favorite-contacts
+   ```
+#### Server Setup
+1.  change to server directory
     ```
-2.  Insert step two here
-    Insert screenshot, if applicable
-    
+    cd server
+    ```
+2.  Install dependencies
+    ```
+    npm install
+    ```
+3.  Start the server
+    ```
+    npm run start
+    ```
+Note: Make sure to deploy this server publicly and copy the server URL.
+
+#### Macro Setup
+1. Download the call-fav-kiosk.js file and upload it to your Webex Room device.
+2. Enable the Macro.
+
+#### Web app Setup
+1. Copy `.env.example` file as `.env`:
+
+   ```
+   cp .env.example .env
+   ```
+   Add the Server URL value to PUBLIC_SERVER_URL in the `.env` file
+2. Install dependencies
+   ```
+   npm install
+   ```
+3. Then run
+   ```
+   npm run dev
+   ```
+   Make sure to deploy this and add the deployed URL on RoomOS in kiosk mode.
+Note: Placing a call will not work on a normal web browser. We need a Room OS device, to place the call.
     
     
 
